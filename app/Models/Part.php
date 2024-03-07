@@ -1,0 +1,19 @@
+<?php
+
+namespace App\Models;
+
+use Illuminate\Database\Eloquent\Factories\HasFactory;
+use Illuminate\Database\Eloquent\Model;
+
+class Part extends Model
+{
+    use HasFactory;
+    protected $fillable = [
+        'part_number',
+        'part_name',
+        'quantity',
+        'bin_location',
+        'active',
+        'unit_price',
+    ];
+}
